@@ -4,7 +4,7 @@ class Circle:
     def __init__(self,radius):
         self.radius = radius
     def area(self):
-        radii = 3.142 * (self.radius * self.radius)
+        radii = 3.142 * (self.radius ** 2)
         return radii
     def circumference (self):
         sum = 2 * (3.142 * self.radius)
@@ -17,7 +17,7 @@ class Square:
          self.sideA = sideA
     
      def square_area(self):
-         sqArea = self.sideA * self.sideA
+         sqArea = self.sideA ** 2
          return sqArea
      
      def square_perimeter(self):
@@ -45,8 +45,9 @@ class Sphere:
         self.radiusA = radiusA
     
     def surfaceArea (self):
-        sphere_area =  4 * (3.142 * (self.radiusA * self.radiusA)) 
+        sphere_area =  4 * (3.142 * (self.radiusA ** 2)) 
         return sphere_area
     
     def volume (self):
-        sphere_volume = 4/3 * (3.142 * (self.radiusA * self.radiusA * self.radiusA)) 
+        sphere_volume = 4/3 * (3.142 * (self.radiusA ** 3)) 
+        return sphere_volume
